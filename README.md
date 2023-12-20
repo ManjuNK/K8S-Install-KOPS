@@ -69,7 +69,7 @@ aws s3api create-bucket --bucket kops-manju --region eu-central-1 --create-bucke
 ### Create the cluster 
 
 ```
-kops create cluster --name=demok8scluster.k8s.local --state=s3://kops-abhi-storage --zones=us-east-1a --node-count=1 --node-size=t2.micro --master-size=t2.micro  --master-volume-size=8 --node-volume-size=8
+kops create cluster --name=demok8scluster.k8s.local --state=s3://kops-manju --zones=eu-central-1a --node-count=1 --node-size=t2.micro --master-size=t2.micro  --master-volume-size=8 --node-volume-size=8
 ```
 
 ### Important: Edit the configuration as there are multiple resources created which won't fall into the free tier.
